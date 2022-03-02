@@ -21,7 +21,7 @@ pub struct MemoryEditor<'a, T> {
     highlight_fn: HighlightHandler<'a, T>,
     mem_size: usize,
     base_addr: usize,
-    raw: sys::MemoryEditor,
+    pub raw: sys::MemoryEditor,
 }
 
 impl<'a, T> MemoryEditor<'a, T> {
